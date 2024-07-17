@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Flores Developer Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header class="bg-dark p-2 text-center">
+        <div class="container">
+            <h1 id="headerTextLarge" class="header-animation text-primary d-none d-lg-block"></h1>
+            <h1 id="headerTextSmall" class="header-animation text-primary d-block d-lg-none"></h1>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand text-primary hover-black" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link text-primary hover-black active" href="#" onclick="loadPage('about.html')">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary hover-black" href="#" onclick="loadPage('projects.html')">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary hover-black" href="#" onclick="loadPage('resume.html')">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary hover-black" href="#" onclick="loadPage('contact.html')">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="content" class="flex-grow-1">
+        <div class="container-fluid p-0">
+            <!-- Placeholder to load content -->
+            <iframe id="contentFrame" src="about.html" style="width: 100%; height: auto; min-height: 600px; border: none;"></iframe>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0">&copy; 2024 Juan Flores. All Rights Reserved.</p>
+            <div>
+                <a class="text-white mx-2" href="#">Privacy Policy</a>
+                <a class="text-white mx-2" href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

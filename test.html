@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Projects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="projects.css">
+    
+</head>
+<body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Projects</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#default-section">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#basic-projects">Basic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intermediate-projects">Intermediate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#advanced-projects">Advanced</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featured-projects">Featured</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid">
+        <!-- Default Section -->
+        <section id="default-section" class="mt-5 pt-4">
+            <h1 class="section-title">Dashboard</h1>
+            <p>Welcome to my Developer Projects Dashboard. Here you can find a variety of projects <span class="special-link" data-toggle="modal" data-target="#criteriaModal">categorized</span> by their complexity levels: <span class="special-link" data-toggle="modal" data-target="#basicModal">Basic</span>, <span class="special-link" data-toggle="modal" data-target="#intermediateModal">Intermediate</span>, <span class="special-link" data-toggle="modal" data-target="#advancedModal">Advanced</span>, and <span class="special-link" data-toggle="modal" data-target="#featuredModal">Featured</span>. Explore the sections to learn more about each project.</p>
+             <div class="line"></div>
+            <img src="pictures/dashboard.png" alt="Dashboard Image" class="img-fluid" id="dashboard-img" style="cursor: pointer;" data-toggle="modal" data-target="#dashboardModal">
+             <div class="line"></div>
+        </section>
+
+        <!-- Basic Projects Section -->
+        <section id="basic-projects" class="mt-5 pt-4">
+            <h1 class="section-title">Basic</h1>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-number">1</div>
+                    <iframe src="https://drive.google.com/file/d/1sVdCE5aHsPiJlnENiq6i4FmSUctJhG4k/preview" width="100%" height="200" style="margin-top: 20px;" allow="autoplay"></iframe>
+                    <p class="technologies">Technologies: Visual Studio 2019<br> Language: C++, Console app</p>
+                    <h3 class="project-title">2.25 LAB Divide by x</h3>
+                    <p class="description">This C++ program prompts the user to input an integer and a divisor. It then performs three mathematical calculations based on the user's input.</p>
+                    <div class="button-container">
+                        <a href="https://drive.google.com/file/d/1hZOsFXViqvTaRh56GRfTnDThFvR7tmUG/view?usp=drive_link
+" class="btn-grad" target="_blank">Download Code</a>
+                        <a href="https://drive.google.com/file/d/1ZWIKTtbIF6IJOPP9aVzHBENaLOwcTDXc/view?usp=drive_link
+" class="btn-grad" target="_blank">See UI</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-item">
+                    <div class="project-number">2</div>
+                    <iframe src="https://drive.google.com/file/d/17ISq5VisuamVSm2L86JrvaXaEevHL0kH/preview" width="100%" height="200" style="margin-top: 20px;" allow="autoplay"></iframe>
+                    <p class="technologies">Technologies: Visual Studio 2019<br> Language: C++, Console app</p>
+                    <h3 class="project-title">2.26 LAB Expression for calories burned during workout</h3>
+                    <p class="description">This C++ program calculates the estimated calories burned during exercise based on the provided equations.</p>
+                    <div class="button-container">
+                        <a href="https://drive.google.com/file/d/13EngIjjI6YeSlXVmZ3CC_Hr0z8tQt1Yw/view?usp=drive_link" class="btn-grad" target="_blank">Download Code</a>
+                        <a href="https://drive.google.com/file/d/1DDonXVNPu7GWmAEeUGYTUk_e2xrcX4vd/view?usp=drive_link" class="btn-grad" target="_blank">See UI</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <div class="project-number">3</div>
+                    <iframe src="https://drive.google.com/file/d/11fLysPqIOWos3zlN24UI59FP75aW8DWd/preview" width="100%" height="200" style="margin-top: 20px;" allow="autoplay"></iframe>
+                    <p class="technologies">Technologies: Visual Studio 2019<br> Language: C++, Console app</p>
+                    <h3 class="project-title">2.27 LAB Using math functions</h3>
+                    <p class="description">This C++ program takes three floating­point numbers x, y, and z as input. It then calculates and outputs x to the power of z, x to the power of (y to the power of z), the absolute value of y, and the square root of (xy to the power of z).</p>
+                    <div class="button-container">
+                        <a href="https://drive.google.com/file/d/1oFuNMXI6qH-LQB2g7fM7NOC72jkCIm-z/view?usp=drive_link" class="btn-grad" target="_blank">Download Code</a>
+                        <a href="https://drive.google.com/file/d/1xaKkamMYsrax4gxkQe-Z0RQuRyxH6UvR/view?usp=drive_link" class="btn-grad" target="_blank">See UI</a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-item">
+                    <div class="project-number">4</div>
+                    <iframe src="https://drive.google.com/file/d/1FHrG8AJVGFSVTk5-QVPLLHiEyy3cIhwO/preview" width="100%" height="200" style="margin-top: 20px;" allow="autoplay"></iframe>
+                    <p class="technologies">Technologies: Visual Studio 2019<br> Language: C++, Console app</p>
+                    <h3 class="project-title">2.28 LAB Simple statistics</h3>
+                    <p class="description">Given four integers, This C++ program calculates and outputs their product and average using both integer and floating­point arithmetic.</p>
+                    <div class="button-container">
+                        <a href="https://drive.google.com/file/d/1NoszDpY86RX0NaT_ytcCg8wf374XHUf6/view?usp=drive_link" class="btn-grad" target="_blank">Download Code</a>
+                        <a href="https://drive.google.com/file/d/1WgXWa2t1vgS1EphIS3q1vU3lJucNwvoO/view?usp=drive_link" class="btn-grad" target="_blank">See UI</a>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-item">
+                    <div class="project-number">5</div>
+                    <iframe src="https://drive.google.com/file/d/1ms70jEDQnAdCWdbTIknXz-Q2fbS8G4_1/preview" width="100%" height="200" style="margin-top: 20px;" allow="autoplay"></iframe>
+                    <p class="technologies">Technologies: Visual Studio 2019<br> Language: C++, Console app</p>
+                    <h3 class="project-title">2.29 LAB Input Welcome message</h3>
+                    <p class="description">This C++ program outputs a simple welcome message</p>
+                    <div class="button-container">
+                        <a href="https://drive.google.com/file/d/1l9DX8D-h9TDTGcz9HU81zOIaJYufrhJf/view?usp=drive_link" class="btn-grad" target="_blank">Download Code</a>
+                        <a href="https://drive.google.com/file/d/1CZP5-__w37wW9IiT8XtNBLNt6H31pJP4/view?usp=drive_link" class="btn-grad" target="_blank">See UI</a>
+                    </div>
+                
+        </section>
+
+       
+</body>
+</html>
