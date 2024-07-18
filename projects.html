@@ -1334,6 +1334,91 @@
                                                                                 }
                                                                             }
                                                                         </script>
+                                        <script>
+                                            function setActive(element) {
+                                                // Remove active class from all sidebar links
+                                                const links = document.querySelectorAll('.sidebar a');
+                                                links.forEach(link => link.classList.remove('active'));
+
+                                                // Add active class to the clicked link
+                                                element.classList.add('active');
+                                            }
+
+                                            function closeModal(modalId) {
+                                                document.getElementById(modalId).style.display = "none";
+                                            }
+
+                                            // Get all elements with class="link-highlight" and set up click event listeners
+                                            var highlights = document.querySelectorAll('.link-highlight');
+                                            highlights.forEach(function (element) {
+                                                element.addEventListener('click', function () {
+                                                    var targetModal = element.getAttribute('data-target');
+                                                    var modal = document.getElementById(targetModal.substring(1));
+                                                    modal.style.display = "flex";
+                                                });
+                                            });
+
+                                            // Close the modal if the user clicks outside of the modal
+                                            window.onclick = function (event) {
+                                                if (event.target.className === 'modal') {
+                                                    event.target.style.display = "none";
+                                                }
+                                            }
+                                        </script>
+                                        <script>
+                                            var imageModal = document.getElementById("image-modal");
+                                            var imageModalImg = document.getElementById("image-modal-img");
+
+                                            document.querySelectorAll(".enlargeable").forEach(img => {
+                                                img.addEventListener("click", function() {
+                                                    imageModal.style.display = "block";
+                                                    imageModalImg.src = this.src;
+                                                });
+                                            });
+
+                                            function closeImageModal() {
+                                                imageModal.style.display = "none";
+                                                imageModalImg.src = "";
+                                            }
+
+                                            window.addEventListener("click", function(event) {
+                                                if (event.target == imageModal) {
+                                                    closeImageModal();
+                                                }
+                                            });
+
+                                            document.querySelectorAll('.sidebar a').forEach(link => {
+                                                link.addEventListener('click', function() {
+                                                    document.querySelectorAll('.sidebar a').forEach(link => link.classList.remove('active'));
+                                                    this.classList.add('active');
+                                                });
+                                            });
+
+
+                                        </script>
+                                        <script>
+                                        document.addEventListener('DOMContentLoaded', function() {
+                                        const images = document.querySelectorAll('.enlargeable');
+                                        images.forEach(image => {
+                                            image.addEventListener('click', function() {
+                                                const isEnlarged = image.classList.contains('enlarged');
+                                                if (!isEnlarged) {
+                                                    image.classList.add('enlarged');
+                                                    const background = document.createElement('div');
+                                                    background.className = 'enlarged-background';
+                                                    document.body.appendChild(background);
+                                                    background.addEventListener('click', function() {
+                                                        image.classList.remove('enlarged');
+                                                        document.body.removeChild(background);
+                                                    });
+                                                } else {
+                                                    image.classList.remove('enlarged');
+                                                }
+                                            });
+                                        });
+                                        });
+                                        </script>
+
 
 
 </body>
