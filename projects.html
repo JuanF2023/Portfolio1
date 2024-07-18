@@ -1214,216 +1214,127 @@
                                                     </ul>
                                                 </section>
 
-                                                <!-- Modal for Categorization Criteria -->
-                                                <div class="modal fade" id="criteriaModal" tabindex="-1" aria-labelledby="criteriaModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="criteriaModalLabel">Project Categorization Criteria</h5>
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <p>This categorization helps to set expectations for the complexity, required skills, and scope of software development projects. The categories used are: Basic, Intermediate, Advanced, and Featured.</p>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+<!-- Modal Structures -->
+                                                                        <!-- Categorization Modal -->
+                                                                        <div id="criteriaModal" class="modal">
+                                                                            <div class="modal-content">
+                                                                                <span class="close" onclick="closeModal('criteriaModal')">&times;</span>
+                                                                                <h2>Project Categorization Criteria</h2>
+                                                                                <p>This categorization helps to set expectations for the complexity, required skills, and scope of software development projects. The categories used are: Basic, Intermediate, Advanced, and Featured.</p>
+                                                                            </div>
+                                                                        </div>
 
-                                                <!-- Modal for Basic Projects -->
-                                                <div class="modal fade" id="basicModal" tabindex="-1" aria-labelledby="basicModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="basicModalLabel">Basic Projects</h5>
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <h5>Characteristics:</h5>
-                                                                <ul>
-                                                                    <li>Simple functionality and scope</li>
-                                                                    <li>Introductory level concepts</li>
-                                                                    <li>Minimal external dependencies</li>
-                                                                </ul>
-                                                                <h5>Examples:</h5>
-                                                                <ul>
-                                                                    <li>To-Do List Application</li>
-                                                                    <li>Calculator Application</li>
-                                                                    <li>Personal Portfolio Website</li>
-                                                                    <li>Weather Forecasting System</li>
-                                                                </ul>
-                                                                <h5>Sources:</h5>
-                                                                <p>1. <a href="http://www.depts.ttu.edu/infotech/docs/pmguide.pdf" target="_blank">"IT Project Management Practices Guide." Texas Tech University, 2023</a>.</p>
-                                                                <p>2. <a href="http://www.personal.utdallas.edu/~chung/SPM.html" target="_blank">"An Introduction to Software Project Management." University of Texas at Dallas</a>.</p>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                                        <!-- Basic Modal -->
+                                                                        <div id="basicModal" class="modal">
+                                                                            <div class="modal-content">
+                                                                                <span class="close" onclick="closeModal('basicModal')">&times;</span>
+                                                                                <h2>Basic Projects</h2>
+                                                                                <p><strong>Characteristics:</strong></p>
+                                                                                <ul>
+                                                                                    <li>Simple functionality and scope</li>
+                                                                                    <li>Introductory level concepts</li>
+                                                                                    <li>Minimal external dependencies</li>
+                                                                                </ul>
+                                                                                <p><strong>Examples:</strong></p>
+                                                                                <ul>
+                                                                                    <li>To-Do List Application</li>
+                                                                                    <li>Calculator Application</li>
+                                                                                    <li>Personal Portfolio Website</li>
+                                                                                    <li>Weather Forecasting System</li>
+                                                                                </ul>
+                                                                                <p><strong>Sources:</strong></p>
+                                                                                <ol>
+                                                                                    <li><a href="https://www.depts.ttu.edu/project_management/documents/IT_Project_Management_Practices_Guide.pdf">"IT Project Management Practices Guide." Texas Tech University, 2023.</a></li>
+                                                                                    <li><a href="https://www.utdallas.edu/~jxs028000/smtp/An%20Introduction%20to%20Software%20Project%20Management.pdf">"An Introduction to Software Project Management." University of Texas at Dallas.</a></li>
+                                                                                </ol>
+                                                                            </div>
+                                                                        </div>
 
-                                                <!-- Modal for Intermediate Projects -->
-                                                <div class="modal fade" id="intermediateModal" tabindex="-1" aria-labelledby="intermediateModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="intermediateModalLabel">Intermediate Projects</h5>
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <h5>Characteristics:</h5>
-                                                                <ul>
-                                                                    <li>Moderate complexity and broader scope</li>
-                                                                    <li>Involves integration of multiple components or technologies</li>
-                                                                    <li>Requires understanding of intermediate-level algorithms and data structures</li>
-                                                                </ul>
-                                                                <h5>Examples:</h5>
-                                                                <ul>
-                                                                    <li>Web applications with user authentication</li>
-                                                                    <li>API development and consumption</li>
-                                                                    <li>Content Management System (CMS)</li>
-                                                                    <li>E-commerce Website</li>
-                                                                </ul>
-                                                                <h5>Sources:</h5>
-                                                                <p>1. <a href="http://www.depts.ttu.edu/infotech/docs/pmguide.pdf" target="_blank">"IT Project Management Practices Guide." Texas Tech University, 2023</a>.</p>
-                                                                <p>2. <a href="http://www.personal.utdallas.edu/~chung/SPM.html" target="_blank">"An Introduction to Software Project Management." University of Texas at Dallas</a>.</p>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                                        <!-- Intermediate Modal -->
+                                                                        <div id="intermediateModal" class="modal">
+                                                                            <div class="modal-content">
+                                                                                <span class="close" onclick="closeModal('intermediateModal')">&times;</span>
+                                                                                <h2>Intermediate Projects</h2>
+                                                                                <p><strong>Characteristics:</strong></p>
+                                                                                <ul>
+                                                                                    <li>Moderate complexity and broader scope</li>
+                                                                                    <li>Involves integration of multiple components or technologies</li>
+                                                                                    <li>Requires understanding of intermediate-level algorithms and data structures</li>
+                                                                                </ul>
+                                                                                <p><strong>Examples:</strong></p>
+                                                                                <ul>
+                                                                                    <li>Web applications with user authentication</li>
+                                                                                    <li>API development and consumption</li>
+                                                                                    <li>Content Management System (CMS)</li>
+                                                                                    <li>E-commerce Website</li>
+                                                                                </ul>
+                                                                                <p><strong>Sources:</strong></p>
+                                                                                <ol>
+                                                                                    <li><a href="https://www.depts.ttu.edu/project_management/documents/IT_Project_Management_Practices_Guide.pdf">"IT Project Management Practices Guide." Texas Tech University, 2023.</a></li>
+                                                                                    <li><a href="https://www.utdallas.edu/~jxs028000/smtp/An%20Introduction%20to%20Software%20Project%20Management.pdf">"An Introduction to Software Project Management." University of Texas at Dallas.</a></li>
+                                                                                </ol>
+                                                                            </div>
+                                                                        </div>
 
-                                                <!-- Modal for Advanced Projects -->
-                                                <div class="modal fade" id="advancedModal" tabindex="-1" aria-labelledby="advancedModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="advancedModalLabel">Advanced Projects</h5>
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <h5>Characteristics:</h5>
-                                                                <ul>
-                                                                    <li>High complexity and functionality</li>
-                                                                    <li>Advanced level concepts</li>
-                                                                    <li>Integration of various technologies and tools</li>
-                                                                </ul>
-                                                                <h5>Examples:</h5>
-                                                                <ul>
-                                                                    <li>Machine learning models and their deployment</li>
-                                                                    <li>Full-stack applications with microservices architecture</li>
-                                                                    <li>Blockchain-Based Voting System</li>
-                                                                    <li>AI-Powered Chatbot</li>
-                                                                </ul>
-                                                                <h5>Sources:</h5>
-                                                                <p>1. <a href="http://www.depts.ttu.edu/infotech/docs/pmguide.pdf" target="_blank">"IT Project Management Practices Guide." Texas Tech University, 2023</a>.</p>
-                                                                <p>2. <a href="http://www.personal.utdallas.edu/~chung/SPM.html" target="_blank">"An Introduction to Software Project Management." University of Texas at Dallas</a>.</p>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                                        <!-- Advanced Modal -->
+                                                                        <div id="advancedModal" class="modal">
+                                                                            <div class="modal-content">
+                                                                                <span class="close" onclick="closeModal('advancedModal')">&times;</span>
+                                                                                <h2>Advanced Projects</h2>
+                                                                                <p><strong>Characteristics:</strong></p>
+                                                                                <ul>
+                                                                                    <li>High complexity and functionality</li>
+                                                                                    <li>Advanced level concepts</li>
+                                                                                    <li>Integration of various technologies and tools</li>
+                                                                                </ul>
+                                                                                <p><strong>Examples:</strong></p>
+                                                                                <ul>
+                                                                                    <li>Machine learning models and their deployment</li>
+                                                                                    <li>Full-stack applications with microservices architecture</li>
+                                                                                    <li>Blockchain-Based Voting System</li>
+                                                                                    <li>AI-Powered Chatbot</li>
+                                                                                </ul>
+                                                                                <p><strong>Sources:</strong></p>
+                                                                                <ol>
+                                                                                    <li><a href="https://www.depts.ttu.edu/project_management/documents/IT_Project_Management_Practices_Guide.pdf">"IT Project Management Practices Guide." Texas Tech University, 2023.</a></li>
+                                                                                    <li><a href="https://www.utdallas.edu/~jxs028000/smtp/An%20Introduction%20to%20Software%20Project%20Management.pdf">"An Introduction to Software Project Management." University of Texas at Dallas.</a></li>
+                                                                                </ol>
+                                                                            </div>
+                                                                        </div>
 
-                                                <!-- Modal for Featured Projects -->
-                                                <div class="modal fade" id="featuredModal" tabindex="-1" aria-labelledby="featuredModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="featuredModalLabel">Featured Projects</h5>
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <h5>Characteristics:</h5>
-                                                                <p>This category is based on my criteria of exceptional project quality or to show some special projects I want my audience to see.</p>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                                        <!-- Featured Modal -->
+                                                                        <div id="featuredModal" class="modal">
+                                                                            <div class="modal-content">
+                                                                                <span class="close" onclick="closeModal('featuredModal')">&times;</span>
+                                                                                <h2>Featured Projects</h2>
+                                                                                <p><strong>Characteristics:</strong></p>
+                                                                                <p>This category is based on my criteria of exceptional project quality or to show some special projects I want my audience to see.</p>
+                                                                            </div>
+                                                                        </div>
 
-                                                <!-- Enlarged Image Container -->
-                                                <div id="image-modal" class="image-modal">
-                                                    <span class="close" onclick="closeImageModal()">&times;</span>
-                                                    <img class="image-modal-content" id="image-modal-img">
-                                                </div>
+                                                                        <script>
+                                                                            function closeModal(modalId) {
+                                                                                document.getElementById(modalId).style.display = "none";
+                                                                            }
 
-                                                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-                                                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-                                                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-                                                <script src="scripts.js"></script>
-                                                <script>
-                                                    var imageModal = document.getElementById("image-modal");
-                                                    var imageModalImg = document.getElementById("image-modal-img");
+                                                                            // Get all elements with class="link-highlight" and set up click event listeners
+                                                                            var highlights = document.querySelectorAll('.link-highlight');
+                                                                            highlights.forEach(function (element) {
+                                                                                element.addEventListener('click', function () {
+                                                                                    var targetModal = element.getAttribute('data-target');
+                                                                                    var modal = document.getElementById(targetModal.substring(1));
+                                                                                    modal.style.display = "flex";
+                                                                                });
+                                                                            });
 
-                                                    document.querySelectorAll(".enlargeable").forEach(img => {
-                                                        img.addEventListener("click", function() {
-                                                            imageModal.style.display = "block";
-                                                            imageModalImg.src = this.src;
-                                                        });
-                                                    });
+                                                                            // Close the modal if the user clicks outside of the modal
+                                                                            window.onclick = function (event) {
+                                                                                if (event.target.className === 'modal') {
+                                                                                    event.target.style.display = "none";
+                                                                                }
+                                                                            }
+                                                                        </script>
 
-                                                    function closeImageModal() {
-                                                        imageModal.style.display = "none";
-                                                        imageModalImg.src = "";
-                                                    }
 
-                                                    window.addEventListener("click", function(event) {
-                                                        if (event.target == imageModal) {
-                                                            closeImageModal();
-                                                        }
-                                                    });
-
-                                                    document.querySelectorAll('.sidebar a').forEach(link => {
-                                                        link.addEventListener('click', function() {
-                                                            document.querySelectorAll('.sidebar a').forEach(link => link.classList.remove('active'));
-                                                            this.classList.add('active');
-                                                        });
-                                                    });
-
-                                                    
-                                                </script>
-                                        <script>
-                                            document.addEventListener('DOMContentLoaded', function() {
-                                                const images = document.querySelectorAll('.enlargeable');
-                                                images.forEach(image => {
-                                                    image.addEventListener('click', function() {
-                                                        const isEnlarged = image.classList.contains('enlarged');
-                                                        if (!isEnlarged) {
-                                                            image.classList.add('enlarged');
-                                                            const background = document.createElement('div');
-                                                            background.className = 'enlarged-background';
-                                                            document.body.appendChild(background);
-                                                            background.addEventListener('click', function() {
-                                                                image.classList.remove('enlarged');
-                                                                document.body.removeChild(background);
-                                                            });
-                                                        } else {
-                                                            image.classList.remove('enlarged');
-                                                        }
-                                                    });
-                                                });
-                                            });
-                                        </script>
-
-                                            
-                                        </body>
-                                        </html>
+</body>
+</html>
