@@ -1,173 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Projects</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="projects.css">
-</head>
-<body>
-    <div class="sidebar">
-        <a class="active" href="#default-section">Dashboard</a>
-        <a href="#basic-projects">Basic</a>
-        <a href="#intermediate-projects">Intermediate</a>
-        <a href="#advanced-projects">Advanced</a>
-        <a href="#featured-projects">Featured</a>
+                                    <!DOCTYPE html>
+                                    <html lang="en">
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                        <title>Developer Projects</title>
+                                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                                        <link rel="stylesheet" href="projects.css">
+                                    </head>
+                                    <body>
+                                        <div class="sidebar">
+                                            <a class="active" href="#default-section">Dashboard</a>
+                                            <a href="#basic-projects">Basic</a>
+                                            <a href="#intermediate-projects">Intermediate</a>
+                                            <a href="#advanced-projects">Advanced</a>
+                                            <a href="#featured-projects">Featured</a>
+                                        </div>
+                                    <div class="main-content">
+                                        <!-- Default Section -->
+                                        <section id="default-section" class="mt-5 pt-4">
+                                            <div class="section-line"></div>
+                                            <h1 class="section-title">Dashboard </h1>    
+
+                                            <p>Welcome to my Developer Projects Dashboard. Here you can find a variety of projects <span class="link-highlight" data-toggle="modal" data-target="#criteriaModal">categorized</span> by their complexity levels: <span class="link-highlight" data-toggle="modal" data-target="#basicModal">Basic</span>, <span class="link-highlight" data-toggle="modal" data-target="#intermediateModal">Intermediate</span>, <span class="link-highlight" data-toggle="modal" data-target="#advancedModal">Advanced</span>, and <span class="link-highlight" data-toggle="modal" data-target="#featuredModal">Featured</span>. Explore the sections to learn more about each project. <a class="link-highlight" href="https://drive.google.com/uc?export=download&id=1T46_vPkRcfivhmeboI1ScAdayCzoXMwL" download="chart.jpg">Download chart.</a></p>
+                                              
+                                            <img id="dashboard-img" src="pictures/dashboard.png" srcset="pictures/dashboard.png 768w, pictures/dashboard-mobile.png 480w" alt="Dashboard Image" class="img-fluid enlargeable">
+                                           
+    </section>
+  
+
+                                        <!-- Basic Projects Section -->
+                                        <section id="basic-projects" class="mt-5 pt-4">
+                                             <div class="section-line"></div>
+                                            <h1 class="section-title">Basic</h1>
+                                            <div class="projects-grid">
+<!-- Project 1 -->
+<div class="project-item">
+    <div class="project-number">1</div>
+    <div class="project-number-left">VBasic10</div>
+    <img id="project-image" src="pictures/VisualBasicPictures/tuitioncalculator.png" width="100%" height="200" style="margin-top: 20px;" alt="Tuition Calculator Image">
+    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
+    <h3 class="project-title"><strong>Tuition Calculator</strong></h3>
+    <p class="description">The program calculates student values based on the number of classes, including tuition and fees, displaying the grand total.</p>
+    <div class="button-container">
+        <a href="https://drive.google.com/file/d/1TMgeJpp91BdFChsVr2NkXpJj8FNv31wj/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
+        <a href="https://drive.google.com/file/d/1PwvCEYuRcaTK0eADWWj1SojQ8eVhlQZG/view?usp=sharing" class="btn-grad" target="_blank">Watch Video</a>
     </div>
-    <div class="main-content">
-        <!-- Default Section -->
-        <section id="default-section" class="mt-5 pt-4">
-            <div class="section-line"></div>
-            <h1 class="section-title">Dashboard</h1>
-            <p>Welcome to my Developer Projects Dashboard. Here you can find a variety of projects <span class="link-highlight" data-toggle="modal" data-target="#criteriaModal">categorized</span> by their complexity levels: <span class="link-highlight" data-toggle="modal" data-target="#basicModal">Basic</span>, <span class="link-highlight" data-toggle="modal" data-target="#intermediateModal">Intermediate</span>, <span class="link-highlight" data-toggle="modal" data-target="#advancedModal">Advanced</span>, and <span class="link-highlight" data-toggle="modal" data-target="#featuredModal">Featured</span>. Explore the sections to learn more about each project. <a class="link-highlight" href="https://drive.google.com/uc?export=download&id=1T46_vPkRcfivhmeboI1ScAdayCzoXMwL" download="chart.jpg">Download chart.</a></p>
-            <img id="dashboard-img" src="pictures/dashboard-main.png" srcset="pictures/dashboard.png 768w, pictures/dashboard-mobile.png 480w" alt="Dashboard Image" class="img-fluid enlargeable">
-        </section>
+</div>
 
-        <!-- Basic Projects Section -->
-        <section id="basic-projects" class="mt-5 pt-4">
-            <div class="section-line"></div>
-            <h1 class="section-title">Basic</h1>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-item">
-                    <div class="project-number">1</div>
-                    <div class="project-number-left">VBasic10</div>
-                    <img id="project-image" src="pictures/all/tuitioncalculator.png" width="100%" height="200" style="margin-top: 20px;" alt="Tuition Calculator Image">
-                    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
-                    <h3 class="project-title"><strong>Tuition Calculator</strong></h3>
-                    <p class="description">The program calculates student values based on the number of classes, including tuition and fees, displaying the grand total.</p>
-                    <div class="button-container">
-                        <a href="https://drive.google.com/file/d/1TMgeJpp91BdFChsVr2NkXpJj8FNv31wj/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
-                        <a href="https://drive.google.com/file/d/1PwvCEYuRcaTK0eADWWj1SojQ8eVhlQZG/view?usp=sharing" class="btn-grad" target="_blank">Watch Video</a>
-                    </div>
-                </div>
+<!-- Project 2 -->
+<div class="project-item">
+    <div class="project-number">2</div>
+    <div class="project-number-left">VBasic9</div>
+    <img id="project-image" src="pictures/VisualBasicPictures/ScubaDive.png" width="100%" height="200" style="margin-top: 20px;" alt="Scuba Dive Image">
+    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
+    <h3 class="project-title"><strong>Scuba Dive</strong></h3>
+    <p class="description">This app identifies scuba dive locations, calculates the total dive team cost.</p>
+    <div class="button-container">
+        <a href="https://drive.google.com/file/d/19ughmeF-dLJP6R0KYQc5oYMTTjIsmMFK/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
+        <a href="https://drive.google.com/file/d/1dZ2oklKivUU_epqIR864FWl03hVI_RQv/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
+    </div>
+</div>
 
-                <!-- Project 2 -->
-                <div class="project-item">
-                    <div class="project-number">2</div>
-                    <div class="project-number-left">VBasic9</div>
-                    <img id="project-image" src="pictures/all/ScubaDive.png" width="100%" height="200" style="margin-top: 20px;" alt="Scuba Dive Image">
-                    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
-                    <h3 class="project-title"><strong>Scuba Dive</strong></h3>
-                    <p class="description">This app identifies scuba dive locations, calculates the total dive team cost.</p>
-                    <div class="button-container">
-                        <a href="https://drive.google.com/file/d/19ughmeF-dLJP6R0KYQc5oYMTTjIsmMFK/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
-                        <a href="https://drive.google.com/file/d/1dZ2oklKivUU_epqIR864FWl03hVI_RQv/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
-                    </div>
-                </div>
+<!-- Project 3 -->
+<div class="project-item">
+    <div class="project-number">3</div>
+    <div class="project-number-left">VBasic8</div>
+    <img id="project-image" src="pictures/VisualBasicPictures/KaraokeMusic.png" width="100%" height="200" style="margin-top: 20px;" alt="Karaoke Music Night Image">
+    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
+    <h3 class="project-title"><strong>Karaoke Music Night</strong></h3>
+    <p class="description">The Karaoke Music Night App determines the cost per night depending on the music selected and the number of hours.</p>
+    <div class="button-container">
+        <a href="https://drive.google.com/file/d/1g4igaCisSU85cOPkHb7bTMf0GcPagwUx/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
+        <a href="https://drive.google.com/file/d/10eMGQe07pcTQrNtdQUMl2xSVoW51Sn4u/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
+    </div>
+</div>
 
-                <!-- Project 3 -->
-                <div class="project-item">
-                    <div class="project-number">3</div>
-                    <div class="project-number-left">VBasic8</div>
-                    <img id="project-image" src="pictures/all/KaraokeMusic.png" width="100%" height="200" style="margin-top: 20px;" alt="Karaoke Music Night Image">
-                    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
-                    <h3 class="project-title"><strong>Karaoke Music Night</strong></h3>
-                    <p class="description">The Karaoke Music Night App determines the cost per night depending on the music selected and the number of hours.</p>
-                    <div class="button-container">
-                        <a href="https://drive.google.com/file/d/1g4igaCisSU85cOPkHb7bTMf0GcPagwUx/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
-                        <a href="https://drive.google.com/file/d/10eMGQe07pcTQrNtdQUMl2xSVoW51Sn4u/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
-                    </div>
-                </div>
+<!-- Project 4 -->
+<div class="project-item">
+    <div class="project-number">4</div>
+    <div class="project-number-left">VBasic7</div>
+    <img id="project-image" src="pictures/VisualBasicPictures/InternetSpeed.png" width="100%" height="200" style="margin-top: 20px;" alt="Internet Speed Image">
+    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
+    <h3 class="project-title"><strong>Internet Speed</strong></h3>
+    <p class="description">This app computes the average home internet connection speed and accepts up to ten data entries.</p>
+    <div class="button-container">
+        <a href="https://drive.google.com/file/d/1lI3CUa7FNUYhgskNSr3hqdgYmjcuYTZi/view?usp=drive_link" class="btn-grad" target="_blank">Download Code</a>
+        <a href="https://drive.google.com/file/d/1M7jiT4-NrOJV1sWh8ocC9oxRS0kYFMkM/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
+    </div>
+</div>
 
-                <!-- Project 4 -->
-                <div class="project-item">
-                    <div class="project-number">4</div>
-                    <div class="project-number-left">VBasic7</div>
-                    <img id="project-image" src="pictures/all/InternetSpeed.png" width="100%" height="200" style="margin-top: 20px;" alt="Internet Speed Image">
-                    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
-                    <h3 class="project-title"><strong>Internet Speed</strong></h3>
-                    <p class="description">This app computes the average home internet connection speed and accepts up to ten data entries.</p>
-                    <div class="button-container">
-                        <a href="https://drive.google.com/file/d/1lI3CUa7FNUYhgskNSr3hqdgYmjcuYTZi/view?usp=drive_link" class="btn-grad" target="_blank">Download Code</a>
-                        <a href="https://drive.google.com/file/d/1M7jiT4-NrOJV1sWh8ocC9oxRS0kYFMkM/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
-                    </div>
-                </div>
+<!-- Project 5 -->
+<div class="project-item">
+    <div class="project-number">5</div>
+    <div class="project-number-left">VBasic6</div>
+    <img id="project-image" src="pictures/VisualBasicPictures/FitnessChallenge.png" width="100%" height="200" style="margin-top: 20px;" alt="Fitness Challenge Image">
+    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
+    <h3 class="project-title"><strong>Fitness Challenge</strong></h3>
+    <p class="description">The Fitness Challenge Program records and displays the progress of users in different physical activities.</p>
+    <div class="button-container">
+        <a href="https://drive.google.com/file/d/1cy-TdNIMRdT_RynQ_7rZRhyF_Jshg1Yk/view?usp=drive_link" class="btn-grad" target="_blank">Download Code</a>
+        <a href="https://drive.google.com/file/d/1U74thjl9cH1oHWnRdBJAP7gVKnYcaMBD/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
+    </div>
+</div>
 
-                <!-- Project 5 -->
-                <div class="project-item">
-                    <div class="project-number">5</div>
-                    <div class="project-number-left">VBasic6</div>
-                    <img id="project-image" src="pictures/all/FitnessChallenge.png" width="100%" height="200" style="margin-top: 20px;" alt="Fitness Challenge Image">
-                    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
-                    <h3 class="project-title"><strong>Fitness Challenge</strong></h3>
-                    <p class="description">The Fitness Challenge Program records and displays the progress of users in different physical activities.</p>
-                    <div class="button-container">
-                        <a href="https://drive.google.com/file/d/1cy-TdNIMRdT_RynQ_7rZRhyF_Jshg1Yk/view?usp=drive_link" class="btn-grad" target="_blank">Download Code</a>
-                        <a href="https://drive.google.com/file/d/1U74thjl9cH1oHWnRdBJAP7gVKnYcaMBD/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
-                    </div>
-                </div>
+<!-- Project 6 -->
+<div class="project-item">
+    <div class="project-number">6</div>
+    <div class="project-number-left">VBasic5</div>
+    <img id="project-image" src="pictures/VisualBasicPictures/DriverlessUber.png" width="100%" height="200" style="margin-top: 20px;" alt="Driverless Uber Image">
+    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
+    <h3 class="project-title"><strong>Driverless Uber</strong></h3>
+    <p class="description">This application calculates and displays the total cost of a Driverless Uber Car Fare.</p>
+    <div class="button-container">
+        <a href="https://drive.google.com/file/d/1Ov7yJMA4eaoE2ThceO9hpx3mcfBbR4o3/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
+        <a href="https://drive.google.com/file/d/1RomeGO1PbzfMb5n_CDyT9SmQRhSZEpa4/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
+    </div>
+</div>
 
-                <!-- Project 6 -->
-                <div class="project-item">
-                    <div class="project-number">6</div>
-                    <div class="project-number-left">VBasic5</div>
-                    <img id="project-image" src="pictures/all/DriverlessUber.png" width="100%" height="200" style="margin-top: 20px;" alt="Driverless Uber Image">
-                    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
-                    <h3 class="project-title"><strong>Driverless Uber</strong></h3>
-                    <p class="description">This application calculates and displays the total cost of a Driverless Uber Car Fare.</p>
-                    <div class="button-container">
-                        <a href="https://drive.google.com/file/d/1Ov7yJMA4eaoE2ThceO9hpx3mcfBbR4o3/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
-                        <a href="https://drive.google.com/file/d/1RomeGO1PbzfMb5n_CDyT9SmQRhSZEpa4/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
-                    </div>
-                </div>
+<!-- Project 7 -->
+<div class="project-item">
+    <div class="project-number">7</div>
+    <div class="project-number-left">VBasic4</div>
+    <img id="project-image" src="pictures/VisualBasicPictures/DeckingCost.png" width="100%" height="200" style="margin-top: 20px;" alt="Decking Cost Image">
+    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
+    <h3 class="project-title"><strong>Decking Cost</strong></h3>
+    <p class="description">This program calculates the cost of a decking project based on the square footage and the chosen decking type.</p>
+    <div class="button-container">
+        <a href="https://drive.google.com/file/d/1-RY-joghiwGaugP3AL8YrpkiraSWgVh1/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
+        <a href="https://drive.google.com/file/d/1HebeWBwZG5v8J9MgKKAce2f_5YOtfEkI/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
+    </div>
+</div>
 
-                <!-- Project 7 -->
-                <div class="project-item">
-                    <div class="project-number">7</div>
-                    <div class="project-number-left">VBasic4</div>
-                    <img id="project-image" src="pictures/all/DeckingCost.png" width="100%" height="200" style="margin-top: 20px;" alt="Decking Cost Image">
-                    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
-                    <h3 class="project-title"><strong>Decking Cost</strong></h3>
-                    <p class="description">This program calculates the cost of a decking project based on the square footage and the chosen decking type.</p>
-                    <div class="button-container">
-                        <a href="https://drive.google.com/file/d/1-RY-joghiwGaugP3AL8YrpkiraSWgVh1/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
-                        <a href="https://drive.google.com/file/d/1HebeWBwZG5v8J9MgKKAce2f_5YOtfEkI/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
-                    </div>
-                </div>
+<!-- Project 8 -->
+<div class="project-item">
+    <div class="project-number">8</div>
+    <div class="project-number-left">VBasic3</div>
+    <img id="project-image" src="pictures/VisualBasicPictures/conversions.png" width="100%" height="200" style="margin-top: 20px;" alt="Conversions Image">
+    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
+    <h3 class="project-title"><strong>Conversions</strong></h3>
+    <p class="description">This program converts between meters and inches using the conversion factors.</p>
+    <div class="button-container">
+        <a href="https://drive.google.com/file/d/1IfTacZf0Y0PBvzEuvHJhsJkI_6oitYNB/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
+        <a href="https://drive.google.com/file/d/1RU9TmMV1XREPpSiFoHFIxg9TiXEne2cg/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
+    </div>
+</div>
 
-                <!-- Project 8 -->
-                <div class="project-item">
-                    <div class="project-number">8</div>
-                    <div class="project-number-left">VBasic3</div>
-                    <img id="project-image" src="pictures/all/conversions.png" width="100%" height="200" style="margin-top: 20px;" alt="Conversions Image">
-                    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
-                    <h3 class="project-title"><strong>Conversions</strong></h3>
-                    <p class="description">This program converts between meters and inches using the conversion factors.</p>
-                    <div class="button-container">
-                        <a href="https://drive.google.com/file/d/1IfTacZf0Y0PBvzEuvHJhsJkI_6oitYNB/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
-                        <a href="https://drive.google.com/file/d/1RU9TmMV1XREPpSiFoHFIxg9TiXEne2cg/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
-                    </div>
-                </div>
-
-                <!-- Project 9 -->
-                <div class="project-item">
-                    <div class="project-number">9</div>
-                    <div class="project-number-left">VBasic2</div>
-                    <img id="project-image" src="pictures/all/ChefShackInventory.png" width="100%" height="200" style="margin-top: 20px;" alt="Chef Shack Inventory Image">
-                    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
-                    <h3 class="project-title"><strong>Chef Shack Inventory</strong></h3>
-                    <p class="description">The Chef Shack Inventory Windows Application determines the depreciation based on a 5-year life of items in inventory using the straight-line and double-declining balance methods.</p>
-                    <div class="button-container">
-                        <a href="https://drive.google.com/file/d/1_UEvbNEygkuJXWVr0EyC7aM7JJNAkeri/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
-                        <a href="https://drive.google.com/file/d/1KYRm4FeZGVxHp7HlAKLDk5WHupt6Rxo7/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
-                    </div>
-                </div>
-
-                <!-- Project 10 -->
-                <div class="project-item">
-                    <div class="project-number">10</div>
-                    <div class="project-number-left">VBasic1</div>
-                    <img id="project-image" src="pictures/all/BikeRentals.png" width="100%" height="200" style="margin-top: 20px;" alt="Bike Rentals Image">
-                    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
-                    <h3 class="project-title"><strong>Bike Rentals</strong></h3>
-                    <p class="description">The Bike Rentals application calculates the total cost of renting bikes based on the rental duration and type of bike.</p>
-                    <div class="button-container">
-                        <a href="https://drive.google.com/file/d/1xV3RJq_bTt7rjNz_n1LVt2JgF6c1YvT9/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
-                        <a href="https://drive.google.com/file/d/1e89Qg6Xx3yjeaAvD9SM5Mv6ewf5PGROc/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
-                    </div>
-                </div>
+<!-- Project 9 -->
+<div class="project-item">
+    <div class="project-number">9</div>
+    <div class="project-number-left">VBasic2</div>
+    <img id="project-image" src="pictures/VisualBasicPictures/ChefShackInventory.png" width="100%" height="200" style="margin-top: 20px;" alt="Chef Shack Inventory Image">
+    <p class="technologies">Technologies: Visual Studio 2019<br>Language: Visual Basic, Desktop</p>
+    <h3 class="project-title"><strong>Chef Shack Inventory</strong></h3>
+    <p class="description">The Chef Shack Inventory Windows Application determines the depreciation based on a 5-year life of items in inventory using the straight-line and double-declining balance methods.</p>
+    <div class="button-container">
+        <a href="https://drive.google.com/file/d/1_UEvbNEygkuJXWVr0EyC7aM7JJNAkeri/view?usp=sharing" class="btn-grad" target="_blank">Download Code</a>
+        <a href="https://drive.google.com/file/d/1KYRm4FeZGVxHp7HlAKLDk5WHupt6Rxo7/view?usp=drive_link" class="btn-grad" target="_blank">Watch Video</a>
+    </div>
+</div>
 
 <!-- Project 10 -->
 <div class="project-item">
@@ -1236,247 +1226,205 @@
                                                     </ul>
                                                     <div class="section-line"></div>
                                                 </section>
-                <!-- Intermediate Projects Section -->
-                <section id="intermediate-projects" class="mt-5 pt-4">
-                    <div class="section-line"></div>
-                    <h1 class="section-title">Intermediate</h1>
-                    <p>Welcome to the Intermediate Projects section. Here, you will soon find a collection of projects that demonstrate moderate complexity and a broader scope. These projects typically involve the integration of multiple components or technologies and require an understanding of intermediate-level algorithms and data structures. Stay tuned for more updates!</p>
-                    <p>Examples of Intermediate Projects:</p>
-                    <ul>
-                        <li>Web applications with user authentication</li>
-                        <li>API development and consumption</li>
-                        <li>Content Management System (CMS)</li>
-                        <li>E-commerce Website</li>
-                    </ul>
-                </section>
-            
-                <!-- Advanced Projects Section -->
-                <section id="advanced-projects" class="mt-5 pt-4">
-                    <div class="section-line"></div>
-                    <h1 class="section-title">Advanced</h1>
-                    <p>Welcome to the Advanced Projects section. This section will showcase high complexity projects that involve advanced level concepts and the integration of various technologies and tools. These projects are designed for those looking to challenge themselves and push the boundaries of their development skills. Check back soon for exciting and challenging projects!</p>
-                    <p>Examples of Advanced Projects:</p>
-                    <ul>
-                        <li>Machine learning models and their deployment</li>
-                        <li>Full-stack applications with microservices architecture</li>
-                        <li>Blockchain-Based Voting System</li>
-                        <li>AI-Powered Chatbot</li>
-                    </ul>
-                </section>
-            
-                <!-- Featured Projects Section -->
-                <section id="featured-projects" class="mt-5 pt-4">
-                    <div class="section-line"></div>
-                    <h1 class="section-title">Featured</h1>
-                    <p>Welcome to the Featured Projects section. Here, we will highlight exceptional projects that showcase unique solutions, innovative approaches, and high-quality code. These projects are selected for their standout qualities and are meant to inspire and demonstrate the potential of what can be achieved. Stay tuned for our featured projects!</p>
-                    <p>What to Expect in Featured Projects:</p>
-                    <ul>
-                        <li>Innovative and creative solutions</li>
-                        <li>High-quality code and documentation</li>
-                        <li>Unique project ideas and implementations</li>
-                        <li>Inspiring examples of what's possible</li>
-                    </ul>
-                    <div class="section-line"></div>
-                </section>
-            
-                <!-- Modal Structures -->
-                <!-- Categorization Modal -->
-                <div id="criteriaModal" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>Project Categorization Criteria</h2>
-                            <span class="close" onclick="closeModal('criteriaModal')">&times;</span>
-                        </div>
-                        <div class="modal-body">
-                            <p>This categorization helps to set expectations for the complexity, required skills, and scope of software development projects. The categories used are: Basic, Intermediate, Advanced, and Featured.</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Basic Modal -->
-                <div id="basicModal" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>Basic Projects</h2>
-                            <span class="close" onclick="closeModal('basicModal')">&times;</span>
-                        </div>
-                        <div class="modal-body">
-                            <p><strong>Characteristics:</strong></p>
-                            <ul>
-                                <li>Simple functionality and scope</li>
-                                <li>Introductory level concepts</li>
-                                <li>Minimal external dependencies</li>
-                            </ul>
-                            <p><strong>Examples:</strong></p>
-                            <ul>
-                                <li>To-Do List Application</li>
-                                <li>Calculator Application</li>
-                                <li>Personal Portfolio Website</li>
-                                <li>Weather Forecasting System</li>
-                            </ul>
-                            <p><strong>Sources:</strong></p>
-                            <ol>
-                                <li><a href="https://www.depts.ttu.edu/project_management/documents/IT_Project_Management_Practices_Guide.pdf">"IT Project Management Practices Guide." Texas Tech University, 2023.</a></li>
-                                <li><a href="https://www.utdallas.edu/~jxs028000/smtp/An%20Introduction%20to%20Software%20Project%20Management.pdf">"An Introduction to Software Project Management." University of Texas at Dallas.</a></li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Intermediate Modal -->
-                <div id="intermediateModal" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>Intermediate Projects</h2>
-                            <span class="close" onclick="closeModal('intermediateModal')">&times;</span>
-                        </div>
-                        <div class="modal-body">
-                            <p><strong>Characteristics:</strong></p>
-                            <ul>
-                                <li>Moderate complexity and broader scope</li>
-                                <li>Involves integration of multiple components or technologies</li>
-                                <li>Requires understanding of intermediate-level algorithms and data structures</li>
-                            </ul>
-                            <p><strong>Examples:</strong></p>
-                            <ul>
-                                <li>Web applications with user authentication</li>
-                                <li>API development and consumption</li>
-                                <li>Content Management System (CMS)</li>
-                                <li>E-commerce Website</li>
-                            </ul>
-                            <p><strong>Sources:</strong></p>
-                            <ol>
-                                <li><a href="https://www.depts.ttu.edu/project_management/documents/IT_Project_Management_Practices_Guide.pdf">"IT Project Management Practices Guide." Texas Tech University, 2023.</a></li>
-                                <li><a href="https://www.utdallas.edu/~jxs028000/smtp/An%20Introduction%20to%20Software%20Project%20Management.pdf">"An Introduction to Software Project Management." University of Texas at Dallas.</a></li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Advanced Modal -->
-                <div id="advancedModal" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>Advanced Projects</h2>
-                            <span class="close" onclick="closeModal('advancedModal')">&times;</span>
-                        </div>
-                        <div class="modal-body">
-                            <p><strong>Characteristics:</strong></p>
-                            <ul>
-                                <li>High complexity and functionality</li>
-                                <li>Advanced level concepts</li>
-                                <li>Integration of various technologies and tools</li>
-                            </ul>
-                            <p><strong>Examples:</strong></p>
-                            <ul>
-                                <li>Machine learning models and their deployment</li>
-                                <li>Full-stack applications with microservices architecture</li>
-                                <li>Blockchain-Based Voting System</li>
-                                <li>AI-Powered Chatbot</li>
-                            </ul>
-                            <p><strong>Sources:</strong></p>
-                            <ol>
-                                <li><a href="https://www.depts.ttu.edu/project_management/documents/IT_Project_Management_Practices_Guide.pdf">"IT Project Management Practices Guide." Texas Tech University, 2023.</a></li>
-                                <li><a href="https://www.utdallas.edu/~jxs028000/smtp/An%20Introduction%20to%20Software%20Project%20Management.pdf">"An Introduction to Software Project Management." University of Texas at Dallas.</a></li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Featured Modal -->
-                <div id="featuredModal" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>Featured Projects</h2>
-                            <span class="close" onclick="closeModal('featuredModal')">&times;</span>
-                        </div>
-                        <div class="modal-body">
-                            <p><strong>Characteristics:</strong></p>
-                            <p>This category is based on my criteria of exceptional project quality or to show some special projects I want my audience to see.</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <script>
-                    function closeModal(modalId) {
-                        document.getElementById(modalId).style.display = "none";
-                    }
-            
-                    // Get all elements with class="link-highlight" and set up click event listeners
-                    var highlights = document.querySelectorAll('.link-highlight');
-                    highlights.forEach(function (element) {
-                        element.addEventListener('click', function () {
-                            var targetModal = element.getAttribute('data-target');
-                            var modal = document.getElementById(targetModal.substring(1));
-                            modal.style.display = "flex";
-                        });
-                    });
-            
-                    // Close the modal if the user clicks outside of the modal
-                    window.onclick = function (event) {
-                        if (event.target.className === 'modal') {
-                            event.target.style.display = "none";
-                        }
-                    }
-            
-                    function setActive(element) {
-                        // Remove active class from all sidebar links
-                        const links = document.querySelectorAll('.sidebar a');
-                        links.forEach(link => link.classList.remove('active'));
-            
-                        // Add active class to the clicked link
-                        element.classList.add('active');
-                    }
-            
-                    var imageModal = document.getElementById("image-modal");
-                    var imageModalImg = document.getElementById("image-modal-img");
-            
-                    document.querySelectorAll(".enlargeable").forEach(img => {
-                        img.addEventListener("click", function() {
-                            imageModal.style.display = "block";
-                            imageModalImg.src = this.src;
-                        });
-                    });
-            
-                    function closeImageModal() {
-                        imageModal.style.display = "none";
-                        imageModalImg.src = "";
-                    }
-            
-                    window.addEventListener("click", function(event) {
-                        if (event.target == imageModal) {
-                            closeImageModal();
-                        }
-                    });
-            
-                    document.querySelectorAll('.sidebar a').forEach(link => {
-                        link.addEventListener('click', function() {
-                            document.querySelectorAll('.sidebar a').forEach(link => link.classList.remove('active'));
-                            this.classList.add('active');
-                        });
-                    });
-            
-                    document.addEventListener('DOMContentLoaded', function() {
-                        const images = document.querySelectorAll('.enlargeable');
-                        images.forEach(image => {
-                            image.addEventListener('click', function() {
-                                const isEnlarged = image.classList.contains('enlarged');
-                                if (!isEnlarged) {
-                                    image.classList.add('enlarged');
-                                    const background = document.createElement('div');
-                                    background.className = 'enlarged-background';
-                                    document.body.appendChild(background);
-                                    background.addEventListener('click', function() {
-                                        image.classList.remove('enlarged');
-                                        document.body.removeChild(background);
-                                    });
-                                } else {
-                                    image.classList.remove('enlarged');
-                                }
-                            });
-                        });
-                    });
-                </script>
-            
-            </body>
-            </html>
+
+                                        <!-- Modal Structures -->
+                                            <!-- Categorization Modal -->
+                                            <div id="criteriaModal" class="modal">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h2>Project Categorization Criteria</h2>
+                                                        <span class="close" onclick="closeModal('criteriaModal')">&times;</span>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>This categorization helps to set expectations for the complexity, required skills, and scope of software development projects. The categories used are: Basic, Intermediate, Advanced, and Featured.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Basic Modal -->
+                                            <div id="basicModal" class="modal">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h2>Basic Projects</h2>
+                                                        <span class="close" onclick="closeModal('basicModal')">&times;</span>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p><strong>Characteristics:</strong></p>
+                                                        <ul>
+                                                            <li>Simple functionality and scope</li>
+                                                            <li>Introductory level concepts</li>
+                                                            <li>Minimal external dependencies</li>
+                                                        </ul>
+                                                        <p><strong>Examples:</strong></p>
+                                                        <ul>
+                                                            <li>To-Do List Application</li>
+                                                            <li>Calculator Application</li>
+                                                            <li>Personal Portfolio Website</li>
+                                                            <li>Weather Forecasting System</li>
+                                                        </ul>
+                                                        <p><strong>Sources:</strong></p>
+                                                        <ol>
+                                                            <li><a href="https://www.depts.ttu.edu/project_management/documents/IT_Project_Management_Practices_Guide.pdf">"IT Project Management Practices Guide." Texas Tech University, 2023.</a></li>
+                                                            <li><a href="https://www.utdallas.edu/~jxs028000/smtp/An%20Introduction%20to%20Software%20Project%20Management.pdf">"An Introduction to Software Project Management." University of Texas at Dallas.</a></li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Intermediate Modal -->
+                                            <div id="intermediateModal" class="modal">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h2>Intermediate Projects</h2>
+                                                        <span class="close" onclick="closeModal('intermediateModal')">&times;</span>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p><strong>Characteristics:</strong></p>
+                                                        <ul>
+                                                            <li>Moderate complexity and broader scope</li>
+                                                            <li>Involves integration of multiple components or technologies</li>
+                                                            <li>Requires understanding of intermediate-level algorithms and data structures</li>
+                                                        </ul>
+                                                        <p><strong>Examples:</strong></p>
+                                                        <ul>
+                                                            <li>Web applications with user authentication</li>
+                                                            <li>API development and consumption</li>
+                                                            <li>Content Management System (CMS)</li>
+                                                            <li>E-commerce Website</li>
+                                                        </ul>
+                                                        <p><strong>Sources:</strong></p>
+                                                        <ol>
+                                                            <li><a href="https://www.depts.ttu.edu/project_management/documents/IT_Project_Management_Practices_Guide.pdf">"IT Project Management Practices Guide." Texas Tech University, 2023.</a></li>
+                                                            <li><a href="https://www.utdallas.edu/~jxs028000/smtp/An%20Introduction%20to%20Software%20Project%20Management.pdf">"An Introduction to Software Project Management." University of Texas at Dallas.</a></li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Advanced Modal -->
+                                            <div id="advancedModal" class="modal">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h2>Advanced Projects</h2>
+                                                        <span class="close" onclick="closeModal('advancedModal')">&times;</span>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p><strong>Characteristics:</strong></p>
+                                                        <ul>
+                                                            <li>High complexity and functionality</li>
+                                                            <li>Advanced level concepts</li>
+                                                            <li>Integration of various technologies and tools</li>
+                                                        </ul>
+                                                        <p><strong>Examples:</strong></p>
+                                                        <ul>
+                                                            <li>Machine learning models and their deployment</li>
+                                                            <li>Full-stack applications with microservices architecture</li>
+                                                            <li>Blockchain-Based Voting System</li>
+                                                            <li>AI-Powered Chatbot</li>
+                                                        </ul>
+                                                        <p><strong>Sources:</strong></p>
+                                                        <ol>
+                                                            <li><a href="https://www.depts.ttu.edu/project_management/documents/IT_Project_Management_Practices_Guide.pdf">"IT Project Management Practices Guide." Texas Tech University, 2023.</a></li>
+                                                            <li><a href="https://www.utdallas.edu/~jxs028000/smtp/An%20Introduction%20to%20Software%20Project%20Management.pdf">"An Introduction to Software Project Management." University of Texas at Dallas.</a></li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Featured Modal -->
+                                            <div id="featuredModal" class="modal">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h2>Featured Projects</h2>
+                                                        <span class="close" onclick="closeModal('featuredModal')">&times;</span>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p><strong>Characteristics:</strong></p>
+                                                        <p>This category is based on my criteria of exceptional project quality or to show some special projects I want my audience to see.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <script>
+                                                function closeModal(modalId) {
+                                                    document.getElementById(modalId).style.display = "none";
+                                                }
+
+                                                // Get all elements with class="link-highlight" and set up click event listeners
+                                                var highlights = document.querySelectorAll('.link-highlight');
+                                                highlights.forEach(function (element) {
+                                                    element.addEventListener('click', function () {
+                                                        var targetModal = element.getAttribute('data-target');
+                                                        var modal = document.getElementById(targetModal.substring(1));
+                                                        modal.style.display = "flex";
+                                                    });
+                                                });
+
+                                                // Close the modal if the user clicks outside of the modal
+                                                window.onclick = function (event) {
+                                                    if (event.target.className === 'modal') {
+                                                        event.target.style.display = "none";
+                                                    }
+                                                }
+
+                                                function setActive(element) {
+                                                    // Remove active class from all sidebar links
+                                                    const links = document.querySelectorAll('.sidebar a');
+                                                    links.forEach(link => link.classList.remove('active'));
+
+                                                    // Add active class to the clicked link
+                                                    element.classList.add('active');
+                                                }
+
+                                                var imageModal = document.getElementById("image-modal");
+                                                var imageModalImg = document.getElementById("image-modal-img");
+
+                                                document.querySelectorAll(".enlargeable").forEach(img => {
+                                                    img.addEventListener("click", function() {
+                                                        imageModal.style.display = "block";
+                                                        imageModalImg.src = this.src;
+                                                    });
+                                                });
+
+                                                function closeImageModal() {
+                                                    imageModal.style.display = "none";
+                                                    imageModalImg.src = "";
+                                                }
+
+                                                window.addEventListener("click", function(event) {
+                                                    if (event.target == imageModal) {
+                                                        closeImageModal();
+                                                    }
+                                                });
+
+                                                document.querySelectorAll('.sidebar a').forEach(link => {
+                                                    link.addEventListener('click', function() {
+                                                        document.querySelectorAll('.sidebar a').forEach(link => link.classList.remove('active'));
+                                                        this.classList.add('active');
+                                                    });
+                                                });
+
+                                                document.addEventListener('DOMContentLoaded', function() {
+                                                    const images = document.querySelectorAll('.enlargeable');
+                                                    images.forEach(image => {
+                                                        image.addEventListener('click', function() {
+                                                            const isEnlarged = image.classList.contains('enlarged');
+                                                            if (!isEnlarged) {
+                                                                image.classList.add('enlarged');
+                                                                const background = document.createElement('div');
+                                                                background.className = 'enlarged-background';
+                                                                document.body.appendChild(background);
+                                                                background.addEventListener('click', function() {
+                                                                    image.classList.remove('enlarged');
+                                                                    document.body.removeChild(background);
+                                                                });
+                                                            } else {
+                                                                image.classList.remove('enlarged');
+                                                            }
+                                                        });
+                                                    });
+                                                });
+                                            </script>
+
+                                        </body>
+                                        </html>
