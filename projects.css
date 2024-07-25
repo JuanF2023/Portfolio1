@@ -148,6 +148,9 @@
     .projects-grid {
         grid-template-columns: 1fr;
     }
+    #dashboard-img {
+        content: url('pictures/dashboard-mobile.png');
+    }
 }
 
 .project-item {
